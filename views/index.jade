@@ -1,5 +1,16 @@
 extends layout
 
 block content
+  .container-fluid
+    .row
+      .col-md-2
+      .col-md-8
+        .jumbotron
+          h1 Hello, world!
+      .col-md-2
+    .row
+      .col-md-4 col-md-4
+      .col-md-4 col-md-4
+      .col-md-4 col-md-4
   h1= freemem
-  p Welcome to #{totalmem}
+  h1 Welcome to #{totalmem}
