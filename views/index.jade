@@ -9,8 +9,11 @@ block content
           h1 Hello, world!
       .col-md-2
     .row
+      .col-md-2
       .col-md-8
         #main(style='height:400px')
+        // ECharts单文件引
+        script(src='./js/echarts.js')
         script(type='text/javascript').
           // 路径配置
           require.config({
@@ -60,6 +63,6 @@ block content
                     myChart.setOption(option);
                   }
           );
-      .col-md-4 col-md-4
+        .col-md-2
   h1= freemem
   h1 Welcome to #{totalmem}
